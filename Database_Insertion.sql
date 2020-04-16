@@ -12,6 +12,7 @@ delete from contains;
 delete from protected_by;
 delete from ordered_by;
 
+--beginning of entity sets
 
 --employee(employee_ID, warehouse_ID, name, salary)
 --employees who work in warehouse - W12425678
@@ -33,7 +34,7 @@ insert into employee values('E12829743','W35837254', 'Andrew Clark','100000.00')
 insert into employee values('E24378463','W35837254', 'Edwin Aldrich','50000.00');
 
 
---dependents(d_ID, employee_ID, name age)
+--dependent(d_ID, employee_ID, name age)
 -- Rahul Mitra's dependents
 insert into dependent values('D78490127','E23134212', 'Kosha Odongo','66');
 insert into dependent values('D39407238','E23134212', 'Debjani Mitra','68');
@@ -147,3 +148,4 @@ insert into manufacturer values('M43762372','Boston Manufacturing','13','Newingt
 insert into manufacturer values('M37498632','Seattle Manufacturing','10','East Olive Street','Seattle','Washington','United States of America');
 insert into manufacturer values('M98128412','Chicago Manufacturing','9','Harvard Avenue','Chicago','Illinois','United States of America');
 
+-- beginning of relationship sets
