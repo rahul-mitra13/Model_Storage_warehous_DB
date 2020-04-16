@@ -124,13 +124,26 @@ insert into security values('S58698235','Theft Secuirty');
 insert into security values('S47683724','Machine Security');
 
 --product(prod_ID, manufacturer_ID, type, price)
+-- product made by manufacturer M43762372
 insert into product values('P93479349','M43762372','Lathe','10000');
-insert into product values('P30273279','M37568735','Drill Press','5000');
+insert into product values('P30273279','M43762372','Drill Press','5000');
+-- product made by manufacturer M37498632
 insert into product values('P93827595','M37498632','Milling Machine','17000');
-insert into product values('P34687346','M01291902','Metal Sheer','12000');
+insert into product values('P34687346','M37498632','Metal Sheer','12000');
+-- product made by manufacturer M98128412
 insert into product values('P32756823','M98128412','Gear Shaper','13000');
-insert into product values('P32648732','M12307325','Planer','9000');
+insert into product values('P32648732','M98128412','Planer','9000');
 
-select * from product
+-- customer(customer_ID, name, street_number, street_name, city, state, country)
+insert into customer values('C38747434','Susmita Mitra','14','Chowringhee Terrace', 'Kolkata', 'West Bengal', 'India');
+insert into customer values('C28092104','Ritendra Kumar Mitra','14','Chowringhee Terrace', 'Kolkata', 'West Bengal', 'India');
+insert into customer values('C20198749','Jayesh Keyal','9','Alipore Park Place', 'Kolkata', 'West Bengal', 'India');
+insert into customer values('C10937654','Tom Szot','11','Farfield Drive', 'Farmington', 'Connecticut', 'United States of America');
+insert into customer values('C91624642','Meghhna Ravishankar','19','South Street', 'Des Moines', 'Iowa', 'United States of America');
+insert into customer values('C01272140','James Holmes','19','South Street', 'Los Angeles', 'California', 'United States of America');
 
+-- manufacturer(manufacturer_ID, name, street_number, street_name, city, state, country)
+insert into manufacturer values('M43762372','Boston Manufacturing','13','Newington Avenue','Boston','Massachusetts','United States of America');
+insert into manufacturer values('M37498632','Seattle Manufacturing','10','East Olive Street','Seattle','Washington','United States of America');
+insert into manufacturer values('M98128412','Chicago Manufacturing','9','Harvard Avenue','Chicago','Illinois','United States of America');
 
