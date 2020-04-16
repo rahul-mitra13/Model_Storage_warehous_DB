@@ -149,3 +149,58 @@ insert into manufacturer values('M37498632','Seattle Manufacturing','10','East O
 insert into manufacturer values('M98128412','Chicago Manufacturing','9','Harvard Avenue','Chicago','Illinois','United States of America');
 
 -- beginning of relationship sets
+
+
+-- operates(employee_ID, machine_ID)
+-- machines that Rahul Mitra operates
+insert into operates values('E23134212','M21492874');
+insert into operates values('E23134212','M37264783');
+-- machines that Chris Armen operates
+insert into operates values('E23324485','M21492874');
+insert into operates values('E23324485','M46382746');
+insert into operates values('E23324485','M20913723');
+-- machines that Alisa Levin operates
+insert into operates values('E87986845','M49749393');
+insert into operates values('E87986845','M87648724');
+-- machines that Fumihiro Tamada operates
+insert into operates values('E48937532','M27498798');
+-- machines that Skyler Szot operates
+insert into operates values('E21389845','M49749393');
+insert into operates values('E21389845','M46382746');
+insert into operates values('E21389845','M27498798');
+-- machines that Hunter Moore operates
+insert into operates values('E90238294','M87648724');
+-- machines that Logan Drecher operates 
+insert into operates values('E34798349','M49749393');
+insert into operates values('E34798349','M20913723');
+-- Kevin Huang does not operate any machine 
+-- machines that Digesh Chitrakar operates
+insert into operates values('E92794862','M20913723');
+insert into operates values('E92794862','M21492874');
+-- machines that Divas Subedi operates 
+insert into operates values('E11273986','M87648724');
+insert into operates values('E11273986','M46382746');
+insert into operates values('E11273986','M87243893');
+-- machines that Andrew Clark operates 
+insert into operates values('E12829743','M37264783');
+-- Edwin Aldrich does not operate any machines
+
+
+--contains(warehouse_ID, prod_ID)
+-- products in warehouse W12425678
+insert into contains values('W12425678','P93479349');
+insert into contains values('W12425678','P30273279');
+insert into contains values('W12425678','P93827595');
+insert into contains values('W12425678','P34687346');
+insert into contains values('W12425678','P32756823');
+insert into contains values('W12425678','P32648732');
+-- products in warehouse W10909409
+insert into contains values('W10909409','P93479349');
+insert into contains values('W10909409','P30273279');
+insert into contains values('W10909409','P93827595');
+insert into contains values('W10909409','P34687346');
+-- produts in warehouse W35837254
+insert into contains values('W35837254','P93827595');
+insert into contains values('W35837254','P34687346');
+insert into contains values('W35837254','P32756823');
+insert into contains values('W35837254','P32648732');
