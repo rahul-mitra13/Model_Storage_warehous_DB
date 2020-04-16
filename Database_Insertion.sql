@@ -14,18 +14,23 @@ delete from ordered_by;
 
 
 --employee(employee_ID, warehouse_ID, name, salary)
-insert into employee values('E23134212','12425678','Rahul Mitra', '21000.00');
-insert into employee values('E23324485','84367831','Chris Armen', '150000.00');
-insert into employee values('E87986845','46757256', 'Alisa Levin','30000.00');
-insert into employee values('E48937532','43283547', 'Fumihiro Tamada','35000.00');
-insert into employee values('E21389845','10909409', 'Skyler Szot','36000.99');
-insert into employee values('E90238294','01248238', 'Hunter Moore','49000.00');
-insert into employee values('E34798349','12294830', 'Logan Drescher','42000.00');
-insert into employee values('E90217498','34354712', 'Kevin Huang','75000.12.00');
-insert into employee values('E92794862','35837254', 'Digesh Chitrakar','29999.99');
-insert into employee values('E11273986','17985248', 'Divas Subedi','32000.00');
-insert into employee values('E12829743','24386632', 'Andrew Clark','100000.00');
-insert into employee values('E24378463','21449538', 'Edwin Aldrich','50000.00');
+--employees who work in warehouse - W12425678
+insert into employee values('E23134212','W12425678','Rahul Mitra', '21000.00');
+insert into employee values('E23324485','W12425678','Chris Armen', '150000.00');
+insert into employee values('E87986845','W12425678', 'Alisa Levin','30000.00');
+insert into employee values('E48937532','W12425678', 'Fumihiro Tamada','35000.00');
+
+-- employees who work in warehouse - W10909409
+insert into employee values('E21389845','W10909409', 'Skyler Szot','36000.99');
+insert into employee values('E90238294','W10909409', 'Hunter Moore','49000.00');
+insert into employee values('E34798349','W10909409', 'Logan Drescher','42000.00');
+insert into employee values('E90217498','W10909409', 'Kevin Huang','75000.12.00');
+
+-- employees who work in warehouse - W35837254
+insert into employee values('E92794862','W35837254', 'Digesh Chitrakar','29999.99');
+insert into employee values('E11273986','W35837254', 'Divas Subedi','32000.00');
+insert into employee values('E12829743','W35837254', 'Andrew Clark','100000.00');
+insert into employee values('E24378463','W35837254', 'Edwin Aldrich','50000.00');
 
 
 --dependents(d_ID, employee_ID, name age)
@@ -67,7 +72,7 @@ insert into dependent values('D04394039','E24378463', 'Mary Aldrich', '71');
 
 --employee_phone(employee_ID,phone)
 -- Rahul Mitra's phone
-insert into employee_phone values('E23134212','2067517697');
+insert into employee_phone values('E23134212','8607517697');
 -- Chris Armen's phone
 insert into employee_phone values('E23324485','8602974223');
 insert into employee_phone values('E23324485','8603238953');
@@ -76,23 +81,23 @@ insert into employee_phone values('E87986845','8600938932');
 -- Fumihiro Tamada's phone
 insert into employee_phone values('E48937532','8603764374');
 -- Skyler Szot's phone 
-insert into employee_phone values('E21389845','8602913263');
+insert into employee_phone values('E21389845','2062913263');
 -- Hunter Moore's phone
 insert into employee_phone values('E90238294','2064032932');
 -- Logan Drescher's phone
 insert into employee_phone values('E34798349','2060348023');
 -- Kevin Huang's phone 
-insert into employee_phone values('E90217498','6410943034');
+insert into employee_phone values('E90217498','2060943034');
 -- Digesh Chitrakar's phone
 insert into employee_phone values('E92794862','6414903833');
 insert into employee_phone values('E92794862','6410238021');
 -- Divas Subedi's phone 
 insert into employee_phone values('E11273986','6412947027');
 -- Andrew Clark's phone
-insert into employee_phone values('E12829743','8609846923');
+insert into employee_phone values('E12829743','6419846923');
 -- Edwin Aldrich's phone
-insert into employee_phone values('E24378463','8608274684');
-insert into employee_phone values('E24378463','2069479247');
+insert into employee_phone values('E24378463','6418274684');
+insert into employee_phone values('E24378463','6419479247');
 
 --machines(machine_ID, name)
 insert into machines values('M21492874', 'Hand Trucks');
@@ -103,6 +108,20 @@ insert into machines values('M87243893', 'Conveyor Belts');
 insert into machines values('M20913723', 'Bucket Elevators');
 insert into machines values('M87648724', 'Reclaimers');
 insert into machines values('M46382746', 'Stackers');
+
+-- warehouse(warehouse_ID, street_number, street_name, city, state, country)
+-- Warehouse ID W12425678
+insert into warehouse values('W12425678', '300', 'Summit Street', 'Hartford', 'Connecticut', 'United States of America');
+-- Warehouse ID W10909409
+insert into warehouse values('W10909409', '12', 'Capitol Avenue', 'Seattle', 'Washington', 'United States of America');
+-- Warehouse ID W35837254
+insert into warehouse values('W35837254', '64', 'North Street', 'Des Moines', 'Iowa', 'United States of America');
+
+--security(comany_ID, name)
+insert into security values('S66473289','Phone Security');
+insert into security values('S23750235','Internet Secuirty');
+insert into security values('S58698235','Theft Secuirty');
+insert into security values('S47683724','Machine Security');
 
 
 
