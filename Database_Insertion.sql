@@ -95,7 +95,14 @@ insert into employee_phone values('E24378463','8608274684');
 insert into employee_phone values('E24378463','2069479247');
 
 --machines(machine_ID, name)
-insert into machines 
+insert into machines values('M21492874', 'Hand Trucks');
+insert into machines values('M27498798', 'Pallet Jacks');
+insert into machines values('M49749393', 'Platfrom Trucks');
+insert into machines values('M37264783', 'Sideloader');
+insert into machines values('M87243893', 'Conveyor Belts');
+insert into machines values('M20913723', 'Bucket Elevators');
+insert into machines values('M87648724', 'Reclaimers');
+insert into machines values('M46382746', 'Stackers');
 
 
 
