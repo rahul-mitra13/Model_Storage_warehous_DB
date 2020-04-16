@@ -3,8 +3,8 @@
 
 create table dependent
 (
-  d_ID          varchar(8),
-  employee_ID   varchar(8),
+  d_ID          varchar(10),
+  employee_ID   varchar(10),
   name          varchar(30),
   age           varchar(2,0),
   primary key(d_ID, employee_ID),
@@ -13,8 +13,8 @@ create table dependent
 
 create table employee
 (
-  employee_ID   varchar(8),
-  warehouse_ID  varchar(8), -- this is taking care of the many-one relationship between employee and warehouse
+  employee_ID   varchar(10),
+  warehouse_ID  varchar(10), -- this is taking care of the many-one relationship between employee and warehouse
   name          varchar(30),
   salary        numeric(8,2) check (salary > 20000),
   primary key(employee_ID),
@@ -23,7 +23,7 @@ create table employee
 
 create table employee_phone
 (
-  employee_ID   varchar(8),
+  employee_ID   varchar(10),
   phone         numeric(8,0),
   primary key(employee_ID,phone),
   foreign key(employee_ID) references employee(employee_ID)
@@ -31,14 +31,14 @@ create table employee_phone
 
 create table machines
 (
-  machine_ID    varchar(8),
+  machine_ID    varchar(10),
   name          varchar(30),
   primary key(machine_ID)
 );
 
 create table warehouse
 (
-  warehouse_ID    varchar(8),
+  warehouse_ID    varchar(10),
   street_number   numeric(4,0),
   street_name     varchar(30),
   city            varchar(30),
@@ -49,15 +49,15 @@ create table warehouse
 
 create table security
 (
-  company_ID      varchar(8),
+  company_ID      varchar(10),
   name            varchar(30),
   primary key(company_ID)
 );
 
 create table product
 (
-  prod_ID         varchar(8),
-  manufacturer_ID varchar(8),
+  prod_ID         varchar(10),
+  manufacturer_ID varchar(10),
   type            varchar(30),
   price           numeric(4,2),
   primary key(prod_ID),
@@ -66,7 +66,7 @@ create table product
 
 create table customer
 (
-  customer_ID     varchar(8),
+  customer_ID     varchar(10),
   name            varchar(30),
   street_number   numeric(4,0),
   street_name     varchar(30),
@@ -78,7 +78,7 @@ create table customer
 
 create table manufacturer
 (
-  manufacturer_ID   varchar(8),
+  manufacturer_ID   varchar(10),
   name              varchar(30),
   street_number   numeric(4,0),
   street_name     varchar(30),
@@ -93,8 +93,8 @@ create table manufacturer
 
 create table operates
 (
-  employee_ID     varchar(8),
-  machine_ID      varchar(8),
+  employee_ID     varchar(10),
+  machine_ID      varchar(10),
   primary key(employee_ID,machine_ID),
   foreign key(employee_ID) references employee(employee_ID),
   foreign key(machine_ID) references machines(machine_ID)
@@ -102,8 +102,8 @@ create table operates
 
 create table contains
 (
-    warehouse_ID   varchar(8),
-    prod_ID        varchar(8),
+    warehouse_ID   varchar(10),
+    prod_ID        varchar(10),
     primary key(warehouse_ID, prod_ID),
     foreign key(warehouse_ID) references warehouse(warehouse_ID),
     foreign key(prod_ID) references product(prod_ID)
@@ -111,8 +111,8 @@ create table contains
 
 create table protected_by
 (
-    warehouse_ID    varchar(8),
-    company_ID      varchar(8),
+    warehouse_ID    varchar(10),
+    company_ID      varchar(10),
     primary key(warehouse_ID, company_ID),
     foreign key(warehouse_ID) references warehouse(warehouse_ID),
     foreign key(company_ID) references security(company_ID)
@@ -120,8 +120,8 @@ create table protected_by
 
   create table ordered_by
 (
-    prod_ID        varchar(8),
-    customer_ID    varchar(8),
+    prod_ID        varchar(10),
+    customer_ID    varchar(10),
     date_ordered   date,
     primary key(prod_ID, customer_ID),
     foreign key(prod_ID) references product(prod_ID),

@@ -123,6 +123,5 @@ insert into security values('S23750235','Internet Secuirty');
 insert into security values('S58698235','Theft Secuirty');
 insert into security values('S47683724','Machine Security');
 
-
-
+select * from security;
 
