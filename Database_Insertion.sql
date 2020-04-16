@@ -123,5 +123,14 @@ insert into security values('S23750235','Internet Secuirty');
 insert into security values('S58698235','Theft Secuirty');
 insert into security values('S47683724','Machine Security');
 
-select * from security;
+--product(prod_ID, manufacturer_ID, type, price)
+insert into product values('P93479349','M43762372','Lathe','10000');
+insert into product values('P30273279','M37568735','Drill Press','5000');
+insert into product values('P93827595','M37498632','Milling Machine','17000');
+insert into product values('P34687346','M01291902','Metal Sheer','12000');
+insert into product values('P32756823','M98128412','Gear Shaper','13000');
+insert into product values('P32648732','M12307325','Planer','9000');
+
+select * from product
+
 
