@@ -1,0 +1,14 @@
+delete from dependent;
+delete from employee;
+delete from employee_phone;
+delete from machines;
+delete from warehouse;
+delete from security; 
+delete from product;
+delete from customer;
+delete from manufacturer;
+delete from operates;
+delete from contains;
+delete from protected_by;
+delete from ordered_by;
+insert into employee values('1234','5678','Rahul Mitra', '21000');

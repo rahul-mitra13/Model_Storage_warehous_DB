@@ -1,4 +1,6 @@
---All the entity sets.
+
+-- these are all my entity sets
+
 create table dependent
 (
   d_ID          varchar(8),
@@ -94,9 +96,9 @@ create table operates
   employee_ID     varchar(8),
   machine_ID      varchar(8),
   primary key(employee_ID,machine_ID),
-  foreign key(employee_ID) references employee(employee_ID)
+  foreign key(employee_ID) references employee(employee_ID),
+  foreign key(machine_ID) references machines(machine_ID)
 );
-
 
 create table contains
 (
