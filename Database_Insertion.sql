@@ -218,7 +218,36 @@ insert into protected_by values('W35837254','S23750235');
 insert into protected_by values('W35837254','S58698235');
 insert into protected_by values('W35837254','S47683724');
 
-select * from protected_by;
+--ordered_by(prod_ID, customer_ID, date_ordered)
+-- customer who ordered product P93479349
+insert into ordered_by values('P93479349','C38747434','2020-03-02');
+insert into ordered_by values('P93479349','C01272140','2020-01-019');
+-- customer who ordered product P30273279
+insert into ordered_by values('P30273279','C38747434','2020-03-15');
+insert into ordered_by values('P30273279','C28092104','2020-03-15');
+insert into ordered_by values('P30273279','C20198749','2020-03-17');
+insert into ordered_by values('P30273279','C10937654','2020-03-20');
+-- customer who ordered product P93827595
+insert into ordered_by values('P93827595','C01272140','2020-01-15');
+insert into ordered_by values('P93827595','C91624642','2020-02-28');
+insert into ordered_by values('P93827595','C10937654','2020-04-28');
+-- customers who ordered product P34687346
+insert into ordered_by values('P34687346','C20198749','2019-03-15');
+insert into ordered_by values('P34687346','C28092104','2020-03-18');
+insert into ordered_by values('P34687346','C91624642','2020-02-18');
+-- customers who ordered product P32756823
+insert into ordered_by values('P32756823','C20198749','2020-01-14');
+-- customers who ordered product P32648732
+insert into ordered_by values('P32648732','C38747434','2020-01-15');
+insert into ordered_by values('P32648732','C28092104','2020-01-16');
+insert into ordered_by values('P32648732','C20198749','2020-01-18');
+insert into ordered_by values('P32648732','C10937654','2020-01-25');
+insert into ordered_by values('P32648732','C91624642','2020-01-29');
+insert into ordered_by values('P32648732','C01272140','2020-02-14');
+select * from ordered_by
+
+
+
 
 
 
