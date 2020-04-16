@@ -204,3 +204,21 @@ insert into contains values('W35837254','P93827595');
 insert into contains values('W35837254','P34687346');
 insert into contains values('W35837254','P32756823');
 insert into contains values('W35837254','P32648732');
+
+--protected_by(warehouse_ID, company_ID)
+-- security systems for warehouse W12425678
+insert into protected_by values('W12425678','S66473289');
+insert into protected_by values('W12425678','S58698235');
+--security systems for warehouse W10909409
+insert into protected_by values('W10909409','S23750235');
+insert into protected_by values('W10909409','S47683724');
+-- security systems for warehouse W35837254
+insert into protected_by values('W35837254','S66473289');
+insert into protected_by values('W35837254','S23750235');
+insert into protected_by values('W35837254','S58698235');
+insert into protected_by values('W35837254','S47683724');
+
+select * from protected_by;
+
+
+
