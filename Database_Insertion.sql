@@ -46,7 +46,7 @@ insert into dependent values('D83774893','E23324485', 'Ewa Syta','70');
 insert into dependent values('D72721408','E87986845', 'Ananya Ravishankar', '71');
 insert into dependent values('D29183823','E87986845', 'Divina Lama', '69');
 -- Fumihiro Tamada's dependents
-insert into dependent values('D27392846','E48937532', 'Isabella Yung', '63');
+-- insert into dependent values('D27392846','E48937532', 'Isabella Yung', '63');
 -- Skyler Szot's dependents
 insert into dependent values('D47616219','E21389845', 'Sohum Chatterjee', '79');
 insert into dependent values('D27493873','E21389845', 'Rosemary Szot', '64');
