@@ -25,7 +25,7 @@ insert into employee values('E48937532','W12425678', 'Fumihiro Tamada','35000.00
 insert into employee values('E21389845','W10909409', 'Skyler Szot','36000.99');
 insert into employee values('E90238294','W10909409', 'Hunter Moore','49000.00');
 insert into employee values('E34798349','W10909409', 'Logan Drescher','42000.00');
-insert into employee values('E90217498','W10909409', 'Kevin Huang','75000.12.00');
+insert into employee values('E90217498','W10909409', 'Kevin Huang','75000.12');
 
 -- employees who work in warehouse - W35837254
 insert into employee values('E92794862','W35837254', 'Digesh Chitrakar','29999.99');
