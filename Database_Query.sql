@@ -38,3 +38,19 @@ where operates.employee_ID = employee.employee_ID and
                                group by employee.employee_ID
                                having salary > (select avg(salary) from employee));
 
+-- Q6. This customer lists all customers by ID, name and address and the prodcuts they ordered, if any.
+-- This query uses and outer join. However, it's not need as all customers have orders. 
+select customer.customer_ID, customer.name, customer.street_number,customer.street_name, customer.city, customer.state, customer.country, product.name
+from customer left outer join ordered_by using (customer_ID), product
+where ordered_by.prod_ID = product.prod_ID;
+
+/*REQUIREMENTS:
+-> Q3 and Q5 uses four or more relations.
+-> Q1 and Q6 uses outer joins. 
+-> Q1 uses and aggregate function.
+-> Q2, Q3 and Q5 uses subqueries in a non-trivial manner.
+    -> Q2 uses set comparison
+-> Q1 and Q4 uses grouping.
+    -> Q4 uses having
+-> Q3 and Q5 uses set operations.
+*/

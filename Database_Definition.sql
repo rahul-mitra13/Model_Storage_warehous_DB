@@ -58,7 +58,7 @@ create table product
 (
   prod_ID         varchar(10),
   manufacturer_ID varchar(10),
-  type            varchar(30),
+  name            varchar(30),
   price           numeric(4,2),
   primary key(prod_ID),
   foreign key(manufacturer_ID) references manufacturer(manufacturer_ID)
