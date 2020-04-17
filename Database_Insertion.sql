@@ -244,7 +244,6 @@ insert into ordered_by values('P32648732','C20198749','2020-01-18');
 insert into ordered_by values('P32648732','C10937654','2020-01-25');
 insert into ordered_by values('P32648732','C91624642','2020-01-29');
 insert into ordered_by values('P32648732','C01272140','2020-02-14');
-select * from ordered_by
 
 
 
