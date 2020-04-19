@@ -16,7 +16,7 @@ create table employee
   employee_ID   varchar(10),
   warehouse_ID  varchar(10), -- this is taking care of the many-one relationship between employee and warehouse
   name          varchar(30),
-  salary        numeric(8,2) check (salary > 20000),
+  salary        numeric(8,2) check (salary > 20000), -- this is the check clause required for the assignment
   primary key(employee_ID),
   foreign key(warehouse_ID) references warehouse(warehouse_ID)
 );
